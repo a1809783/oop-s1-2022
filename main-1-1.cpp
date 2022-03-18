@@ -1,20 +1,26 @@
 #include <iostream>
+#include <string>
 
-extern int diagonal(int array[4][4]);
+using namespace std;
 
-int main(){
+extern void printer(int array[10][10]);
 
+int main()
+{
+    int array[10][10] = {
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,10},
+    };
 
-int array[4][4]={
-    {2,2,4,3},
-    {2,4,5,6},
-    {3,4,5,6},
-    {1,2,5,6},
+    printer(array);
 
-};
-int sum = diagonal(array);
-
-std::cout<<sum<<std::endl;
-return 0;
-
+    return 0;
 }
