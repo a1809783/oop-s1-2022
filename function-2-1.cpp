@@ -3,18 +3,14 @@
 
 using namespace std;
 
-void print_as_binary(string decimal_number){
+void print_sevens(int *nums, int length){
 
-    int decimalnumb = stoi(decimal_number);
+    for (size_t i = 0; i < length; i++){
 
-    string binarynumb;
+        if (*(nums + i) % 7 == 0){
 
-    while (decimalnumb > 0)
-    {
-        binarynumb = to_string(decimalnumb % 2) + binarynumb;
-
-        decimalnumb = decimalnumb / 2;
+            cout << *(nums + i) << endl;
+            
+        }
     }
-
-    cout << binarynumb << endl;
 }

@@ -1,11 +1,17 @@
 #include <iostream>
-extern void print_scaled_matrix(int array[3][3], int scale);
+#include <string>
 
-int main(){
+using namespace std;
 
-    int scale = 3;
-    int threebythree[3][3] = {{0,1,2}, {3,4,5}, {6,7,8}};
-    print_scaled_matrix(threebythree, scale);
+void cpyda(double *old_array, double *new_array, int length);
+
+int main()
+{
+
+    double old_array[3] = {1, 2, 3};
+    double new_array[3];
+
+    cpyda(old_array, new_array, 3);
 
     return 0;
 }

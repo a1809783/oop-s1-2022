@@ -1,15 +1,15 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-void printer(int array[10][10]){
+void copy_2d_strings(std::string first[][2], std::string second[][2], int n){
 
-
-    for (int i = 0; i < 10; i++)
-    {
-        for (int j = 0; j < 10; j++){
-            cout << array[i][j] << " ";
+    for (int i = 0; i < n; i++){
+        
+        for (int x = 0; x < 2; x++)
+        {
+            second[i][x] = first[i][x];
         }
-        cout << endl;
     }
 }

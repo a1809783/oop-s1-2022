@@ -2,14 +2,16 @@
 #include <string>
 
 using namespace std;
-extern void print_as_binary(string decimal_number);
+
+void print_sevens(int *nums, int length);
 
 int main(){
 
+    int old_array[3] = {7, 1, 7};
+    
+    int *nums = old_array;
 
-    string decimalnumb = "25";
-
-    print_as_binary(decimalnumb);
+    print_sevens(nums, 3);
 
     return 0;
 }

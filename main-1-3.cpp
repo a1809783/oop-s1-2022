@@ -1,16 +1,17 @@
 #include <iostream>
+#include <string>
 
-extern void count_numbers(int array[4][4]);
+using namespace std;
 
-int main(){
-    int array[4][4] = {
-        {2,2,4,3},
-        {2,4,5,6},
-        {3,4,5,6},
-        {1,2,5,6},
-    };
+void cpyia(int old_array[], int new_array[], int length);
 
-    count_numbers(array);
+int main()
+{
+
+    int old_array[3] = {1, 2, 3};
+    int new_array[3];
+
+    cpyia(old_array, new_array, 3);
 
     return 0;
 }

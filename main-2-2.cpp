@@ -3,13 +3,15 @@
 
 using namespace std;
 
-extern int binary_to_number(int binary_digits[], int number_of_digits);
+int maximum_sum(int *nums, int length);
 
 int main(){
 
-    int binarynumb[] = {1, 0, 1, 0, 0, 1};
 
-    binary_to_number(binarynumb, 6);
+    int old_array[5] = {-12, 3, -6, 10,-5};
+    int *nums = old_array;
+
+    maximum_sum(nums, 5);
 
     return 0;
 }

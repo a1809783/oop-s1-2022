@@ -1,22 +1,25 @@
 #include <iostream>
 #include <string>
-#include <cmath>
 
 using namespace std;
 
-int binary_to_number(int binary_digits[], int number_of_digits){
+int maximum_sum(int *nums, int length){
 
-    int decimalnumb = 0;
+    int max = 0;
 
-    int power = 0;
-    
-    for (int i = number_of_digits - 1; i > -1; i--){
+    for (int i = 0; i < length; i++){
 
-        decimalnumb += binary_digits[i] * pow(2, power);
+        int sum = 0;
 
-        power++;
+        for (int j= 0; j < length; j++){
 
-    }
+            sum = sum + nums[j];
 
-    return decimalnumb;
+            max = sum > max ? sum : max;
+        }
+
+        }
+        cout << max << endl;
+
+    return max;
 }

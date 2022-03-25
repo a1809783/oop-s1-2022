@@ -3,24 +3,13 @@
 
 using namespace std;
 
-extern void printer(int array[10][10]);
+void copy_2d_strings(std::string first[][2], std::string second[][2], int n);
 
-int main()
-{
-    int array[10][10] = {
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-        {1,2,3,4,5,6,7,8,9,10},
-    };
+int main(){
 
-    printer(array);
+    string first[3][2] = {{"1", "2"}, {"3", "4"}, {"5", "6"}};
+    string second[3][2];
 
+    copy_2d_strings(first, second, 3);
     return 0;
 }

@@ -1,20 +1,12 @@
 #include <iostream>
+#include <string>
 
-void print_scaled_matrix(int array[3][3], int scale){
+using namespace std;
 
-    int finalnum=0;
-    for (int i=0; i<3; i++){
+void cpyda(double *old_array, double *new_array, int length){
 
-        for (int j=0; j<3; j++)
-        {
-            finalnum=array[i][j]*scale;
-            std::cout << finalnum;
-
-            if (j!= 2)
-            {
-                std::cout << " ";
-            }
-        }
-        std::cout << std::endl;
+    for (size_t i = 0; i < length; i++){
+        
+        new_array[i] = old_array[i];
     }
 }
