@@ -1,17 +1,31 @@
 #include <iostream>
 #include <string>
+#include "cart.h"
 
-using namespace std;
+int main(int argc, char const *argv[])
+{
 
-int maximum_sum(int *nums, int length);
+    cart cart0 = cart();
+    meerkat meerkat0 = meerkat();
 
-int main(){
+    meerkat0.setName("A");
+    meerkat0.setAge(10);
 
+    cart0.addMeerkat(meerkat0);
 
-    int old_array[5] = {-12, 3, -6, 10,-5};
-    int *nums = old_array;
+    meerkat meerkat1 = meerkat();
 
-    maximum_sum(nums, 5);
+    meerkat1.setName("rowan");
+    meerkat1.setAge(32);
+
+    cart0.addMeerkat(meerkat1);
+    cart0.addMeerkat(meerkat1);
+    cart0.addMeerkat(meerkat1);
+    cart0.addMeerkat(meerkat1);
+    cart0.addMeerkat(meerkat1);
+    cart0.addMeerkat(meerkat1);
+
+    cart0.printMeerkats();
 
     return 0;
 }
