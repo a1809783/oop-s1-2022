@@ -41,5 +41,5 @@ bool Store::add_stock(Stock_item new_stock){
 };
 
 Store::~Store(){
-    delete _stocks;
+    delete[] _stocks;
 }
